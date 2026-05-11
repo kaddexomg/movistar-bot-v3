@@ -1,0 +1,25 @@
+{
+  "name": "movistar-validator-bot",
+  "version": "3.0.0",
+  "description": "Bot de validación de ventas Movistar MX — hoja REGISTROS",
+  "main": "index.js",
+  "scripts": {
+    "start":          "node index.js",
+    "headless":       "node index.js --headless",
+    "debug":          "node index.js --debug",
+    "force":          "node index.js --force",
+    "diagnostico":    "node src/diagnostico.js",
+    "test:sheets":    "node src/diagnostico.js --solo-sheets",
+    "test:numero":    "node src/test-numero.js"
+  },
+  "dependencies": {
+    "puppeteer":        "^21.0.0",
+    "googleapis":       "^140.0.0",
+    "google-auth-library": "^9.0.0",
+    "dotenv":           "^16.3.1",
+    "chalk":            "^4.1.2",
+    "cli-progress":     "^3.12.0",
+    "p-limit":          "^3.1.0"
+  },
+  "engines": { "node": ">=18.0.0" }
+}

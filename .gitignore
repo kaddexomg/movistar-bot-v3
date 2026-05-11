@@ -1,0 +1,8 @@
+node_modules/
+credentials.json
+.env
+logs/
+*.png
+*.jpg
+.DS_Store
+Thumbs.db
